@@ -7,11 +7,10 @@
   "authors": [
     "起明渊白"
   ],
-
   "custom": {
     "modmenu": {
       "links": {
-        "源码": "https://space.bilibili.com/388406072/",
+        "源码": "https://github.com/nowfu/mc-fabric-auto-login",
         "bilibili": "https://space.bilibili.com/388406072/"
       }
     }
@@ -34,6 +33,6 @@
   "depends": {
     "fabricloader": ">=0.15.10",
     "fabric": "*",
-    "minecraft": ">=1.21"
+    "minecraft": ">=1.21.6"
   }
 }

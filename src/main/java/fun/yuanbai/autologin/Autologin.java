@@ -5,6 +5,7 @@ import fun.yuanbai.autologin.event.AutoLoginHandler;
 import net.fabricmc.api.ModInitializer; // 导入Fabric API的模组初始化接口
 import net.fabricmc.fabric.api.client.message.v1.ClientReceiveMessageEvents;
 import net.fabricmc.fabric.api.client.message.v1.ClientSendMessageEvents;
+import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents;
 import org.apache.logging.log4j.LogManager; // 导入Log4j日志框架的日志管理器类
 import org.apache.logging.log4j.Logger; // 导入Log4j日志框架的日志记录器类
 
@@ -30,6 +31,7 @@ public class Autologin implements ModInitializer {
             //客户端发送消息事件
             ClientSendMessageEvents.COMMAND.register(new AutoLoginHandler());
 
+            ClientPlayConnectionEvents.JOIN.register(new AutoLoginHandler());
 
     }
 }
